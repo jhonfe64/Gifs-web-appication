@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,700&display=swap" rel="stylesheet">
+    <title>Gifts</title>
+</head>
+<body id="body" class="body">
+    <div class="top-banner">
+        <p>!bienvenidos/as a Guifos.com======Donde los gifs están.////// Número de visitas: <span id="counting_users"></span></p>
+    </div>
+    <div class="container">
+       <div class="header">
+           <div class="logo">
+                <img src="images/gifOF_logo.png" alt="gifos logo">
+           </div>
+           <div class="header-buttons">
+                <div class="buttons">
+                    <a href="mis_guifos.html" class="myGift">Crear gifos</a>
+                    <button type="button" id="choose-theme">Elegir tema</button>
+                    <button type="button" id="dropdown-btn"><img src="images/dropdown.svg" alt="dropdown"></button>
+                    <a href="mis_guifos.html">Mis gifos</a>
+                </div>
+                <div id="toggle-menu" class="toggle-menu toggle-menu-hide">
+                    <button id="light_mode">Sailor Day</button>
+                    <button id="night_mode">Sailor night</button>
+               </div>
+           </div>
+       </div>
+    </div>   
+       
+    <div class="container home">
+        <section class="searching">
+            <div>
+               <h5>Buscar</h5> 
+            </div>
+            <div class="search-bar">
+                <input id="searching-input" type="text" placeholder="Busca gifs, hashtags, temas, busca lo que quieras...">
+                <button id="searching_button" type="button"><img src="images/lupa_inactive.svg" alt="lupa busqueda">Buscar</button>
+            </div>
+            <div id="search-options" class="search-options search-options-hide">
+            </div>
+        </section>
+
+        <section id="serching_buttons_container">
+        </section>
+
+        <section class="top-gifs" id="top-gifs">
+            <p class="section_title" id="recommended">Hoy te sugerimos: </p>
+        </section>
+
+        <section class="tendences">
+            <p class="section_title" id="tendences">Tendencias: </p>
+            <div id="tendences_gifs" class="top-gifs tendences-gifs-line-one">    
+            </div>
+       </section>
+    </div>   
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+

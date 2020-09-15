@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,700&display=swap" rel="stylesheet">
+    <title>Gifts</title>
+</head>
+<body id="body" class="body">
+    <div class="top-banner">
+        <p>!bienvenidos/as a Guifos.com======Donde los gifs están.////// Número de visitas: <span id="counting_users"></span></p>
+    </div>  
+    <div class="container mis_guifos_menu">
+        <div class="header">
+            <div class="logo">
+                <a href="index.html"><img src="images/arrow.svg" alt="back to home"></a> 
+                <img src="images/gifOF_logo.png" alt="gifos logo">
+            </div>
+            <div class="header-buttons">
+                <div class="buttons">
+                    <a href="mis_guifos.html" class="myGift">Crear gifos</a>
+                    <button type="button" id="choose-theme">Elegir tema</button>
+                    <button type="button" id="dropdown-btn"><img src="images/dropdown.svg" alt="dropdown"></button>
+                    <a href="mis_guifos.html">Mis gifos</a>
+                </div>
+                <div id="toggle-menu" class="toggle-menu toggle-menu-hide">
+                    <button id="light_mode">Sailor Day</button>
+                    <button id="night_mode">Sailor night</button>
+               </div>
+           </div>
+        </div>
+     </div>  
+
+
+    <section class="create_gifos">
+        <div class="container">
+            <div class="new_gifos" id="creating_gif_permission">
+                <div class="new_gifos_title">
+                    <h4>Crear guifos</h4>
+                </div>
+                <div class="new_gifos_content">
+                    <div class="img_container">
+                        <img src="images/window_img.png" alt="window">
+                    </div>
+                    <div class="description">
+                        <h4>Aqui podrás crear tus propios gifos</h4>
+                        <p>Crear tu <strong><i>guifo</i></strong> es muy fácil, graba cualquier imagen con tu cámara y ibtén guifos personalizados. Los pasos para crear tu gifo son:</p>
+                        <ul>
+                            <li><span>1)</span> Dar permiso de acceso a la cámara (sólo por el tiempo de uso)</li>
+                            <li><span>2)</span> Capturar tu momento guifo</li>
+                            <li><span>3)</span> Revisar el momento</li>
+                            <li><span>4)</span> Listo para subir y compartir!</li>
+                        </ul>
+                        <p>Quieres comenzar a crear tu <strong><i>Guifo</i></strong> ahora?</p>
+                        <div class="create_gifos_buttons">
+                            <a href="index.html">Cancelar</a>
+                            <button type="button" id="start" >Comenzar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="upload_gifo">
+            <div class="container">
+                <div class="new_gifos create_new_gifo" id="display_video">
+                    <div class="new_gifos_title create_new_gifos_title">
+                        <h4>Un chequeo antes de comenzar</h4>
+                        <img id="close_creating_gif" src="images/close.svg" alt="close">
+                    </div>
+                    <div class="img_container" id= "video_container">
+                        <video  id="my_video_gif" autoplay>
+
+                        </video>
+                    </div>
+                    <div class="new_gifos_btn">
+                        <button class="btn_capture btn_capture_new_gif"  type="button"><img src="images/camera.svg" alt="camara"></button>
+                        <button class="btn_capture btn_capture_new_gif" id="btn_capture" type="button">Capturar</button>
+                        <div class="gift-ready">
+                            <div class="gift-ready-btns">
+                                <div class="counting">
+                                    <span id="days">00</span><span id="hours">00</span><span id="minutes">00</span><span id="seconds">00</span>
+                                </div>
+                            </div>
+                            <div class="gift-ready-btns">
+                                <button class="btn_capture" type="button"><img src="images/recording.svg" alt="camara"></button>
+                                <button class="btn_capture btn-ready" id="stop_recording" type="button">Listo</button>
+                            </div>
+                            <div id="repeat_capture">
+                                <div class="counting">
+                                    <span id="video_days">00</span><span id="video_hours">00</span><span id="video_minutes">00</span><span id="video_seconds">00</span>
+                                </div>
+                                <div class="loading">
+                                    <div class="forward" id="play_btn">
+                                        <img src="images/forward.svg" alt="play buttom">
+                                    </div>
+                                    <div class="forward hide_button" id="pause_btn">
+                                        <img id="pause" src="images/pause.png" alt="pasuse button">
+                                    </div>
+                                    <div class="loading_squares">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                             <div id="repeat_capture_buttons">
+                                <button class="btn_capture btn_repeat_capture" type="button" id="btn_repeat_capture">Repetir captura</button>
+                                <button class="btn_capture" type="button" id="btn_upload_gif">Subir guifo</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="upload_gifo">
+            <div class="container">
+                <div class="new_gifos" id="loading_gifo">
+                    <div class="new_gifos_title create_new_gifos_title">
+                        <h4>Subiendo gifo</h4>
+                        <img id="close_uploading_gif" src="images/close.svg" alt="close">
+                    </div>
+                    <div class="uploading_gifo">
+                        <div class="img_container_globe">
+                            <img src="images/globe_img.png" alt="perro">
+                         </div>
+                         <div class="loading loading_new_gifo">
+                             <div class="forward">
+                                 <img src="images/forward.svg" alt="">
+                             </div>
+                             <div class="loading_squares">
+                                 <div></div>
+                                 <div></div>
+                                 <div></div>
+                                 <div></div>
+                                 <div></div>
+                                 <div></div>
+                                 <div></div>
+                                 <div></div>
+                                 <div></div>
+                                 <div></div>
+                                 <div></div>
+                                 <div></div>
+                                 <div></div>
+                                 <div></div>
+                                 <div></div>
+                                 <div></div>
+                                 <div></div>
+                             </div>
+                         </div>
+                         <p>Tiempo restante: 30 años algunos minutos</p>
+                    </div>
+                    <div class="upload_gifo_btn new_gifos_btn">
+                        <div class="btn_container">
+                            <button class="btn_capture " type="button" style="padding-left: 40px; padding-right: 40px;">Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="new_gifos" id="showing_updated_gif">
+                <div class="new_gifos_title create_new_gifos_title">
+                    <h4>Gifo subido con Éxito</h4>
+                    <img id="close_uploaded_gif" src="images/close.svg" alt="close">
+                </div>
+                <div class="new_gifos_content" style="display: flex; align-items: center;">
+                    <div class="img_container"  style="width: 50%;">
+                        <img src="" id="new_gif-img" alt="new_gif">
+                    </div>
+                    <div style="width: 50%;">
+                        <h4 style="margin-bottom: 20px;">Gifo creado con éxito</h4>
+                        <button id="copy_gif_link">Copiar Enlace Gifo</button>
+                        <input id="copy_link_input" type="text" placeholder="Hola">
+                        <a id="download_gif">Descargar Gifo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="my_gifos">
+        <div class="container">
+            <section class="my_gifs">
+                <p class="section_title">Mis guifos </p>
+                <div class="top-gifs" id="my_new_gif">
+                </div>  
+            </section>
+        </div>
+    </section>
+    
+   
+    <script src="js/script.js"></script>
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <script src="js/mis_guifos.js"></script>
+</body>
+</html>
+
+
