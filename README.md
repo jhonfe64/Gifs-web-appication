@@ -18,9 +18,8 @@ This web application build in Html5, css3 and vanilla Js brings and show gifs fr
 - git clone https://github.com/jhonfe64/Gifs-web-appication.git
 
 
+![](https://github.com/jhonfe64/Gifs-web-appication/blob/master/gif1.png?raw=true)
 
-![](https://github.com/jhonfe64/Gifs-web-appication/blob/master/gif1.ppg?raw=true)
+![](https://github.com/jhonfe64/Gifs-web-appication/blob/master/gif3.png?raw=true)
 
-![](https://github.com/jhonfe64/Gifs-web-appication/blob/master/gif3.ppg?raw=true)
-
-![](https://github.com/jhonfe64/Gifs-web-appication/blob/master/gif2.ppg?raw=true)
+![](https://github.com/jhonfe64/Gifs-web-appication/blob/master/gif2.png?raw=true)
