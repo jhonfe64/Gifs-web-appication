@@ -13,7 +13,7 @@ This web application build in Html5, css3 and vanilla Js brings and show gifs fr
 
 ### To clone and run the the proyect
 
-### Type on vsc console
+#### Type on vsc console
 
 - git clone https://github.com/jhonfe64/Gifs-web-appication.git
 
